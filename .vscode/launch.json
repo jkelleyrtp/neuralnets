@@ -1,0 +1,138 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'NeuroNet'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=NeuroNet"
+                ],
+                "filter": {
+                    "name": "NeuroNet",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'importmat'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=importmat",
+                    "--package=NeuroNet"
+                ],
+                "filter": {
+                    "name": "importmat",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'importmat'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=importmat",
+                    "--package=NeuroNet"
+                ],
+                "filter": {
+                    "name": "importmat",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'minstnn'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=minstnn",
+                    "--package=NeuroNet"
+                ],
+                "filter": {
+                    "name": "minstnn",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'minstnn'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=minstnn",
+                    "--package=NeuroNet"
+                ],
+                "filter": {
+                    "name": "minstnn",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'rpsnn'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=rpsnn",
+                    "--package=NeuroNet"
+                ],
+                "filter": {
+                    "name": "rpsnn",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'rpsnn'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=rpsnn",
+                    "--package=NeuroNet"
+                ],
+                "filter": {
+                    "name": "rpsnn",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

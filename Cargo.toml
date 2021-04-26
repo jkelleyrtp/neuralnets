@@ -1,0 +1,17 @@
+[package]
+name = "NeuroNet"
+version = "0.1.0"
+authors = ["Jonathan Kelley <jkelleyrtp@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tch = "0.4.0"
+anyhow = "1.0.40"
+matfile = "0.2.1"
+
+
+[profile.dev]
+split-debuginfo = "unpacked"
+rpath = true
