@@ -17,7 +17,7 @@ pub struct Experiment {
     pub testing: Box<[f64]>,
     pub testing_labels: Vec<i64>,
 }
-struct RawExperiment {
+pub struct RawExperiment {
     pub data: ExpData,
     pub labels: [RpsLabel; NUM_TRIALS],
 }
@@ -136,10 +136,11 @@ pub fn load_all_data() -> Result<Experiment> {
         let mut buf = vec![0.0_f64; NUM_CHANS * NUM_SAMPLES * NUM_TRIALS * 5].into_boxed_slice();
         let mut buf_iter = buf.iter_mut();
 
-        for exp in training_array {
-            for chan in exp.data.iter() {
-                for sig in chan {
-                    for pt in sig {
+        for (dx, exp) in training_array.into_iter().enumerate() {
+            // 30 trials
+            for trial in exp.data.iter() {
+                for chan in trial {
+                    for pt in chan {
                         *buf_iter.next().unwrap() = *pt;
                     }
                 }
