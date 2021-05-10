@@ -5,12 +5,14 @@ This repository holds the code for my final project in Neurotechnology - a neura
 The code is divided into two sprints:
 
 Sprint 1
-- a basic RNN and CNN to analyze EMG data after-the-fact
+- a basic feed-forward neural network 
+- a slightly more advanced recurrent neural network
 
 Sprint 2
-- PCA/tSNE of EMG data
-- transfer learning
-- LSTM
+- An LSTM auto-encoder 
+- A convolutional neural network
+
+Each of these mini projects are implemented in Rust, with the EMG data under test having been acquired by anonymized human subjects.
 
 
 
