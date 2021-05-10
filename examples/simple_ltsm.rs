@@ -1,10 +1,10 @@
-//! The actual sprint1 deliverable
+//! LTTSM
 
 use anyhow::Result;
+use neuronet::load_tch_data;
 use tch::nn::RNN;
 use tch::nn::{RNNConfig, LSTM};
 use tch::{nn, nn::Module, nn::OptimizerConfig, Device};
-use NeuroNet::load_tch_data;
 
 const SIGDIM: i64 = 4500;
 const HIDDEN_NODES: i64 = 30;

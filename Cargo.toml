@@ -1,5 +1,5 @@
 [package]
-name = "NeuroNet"
+name = "neuronet"
 version = "0.1.0"
 authors = ["Jonathan Kelley <jkelleyrtp@gmail.com>"]
 edition = "2018"
@@ -10,6 +10,12 @@ edition = "2018"
 tch = "0.4.0"
 anyhow = "1.0.40"
 matfile = "0.2.1"
+ndarray = "0.15.1"
+itertools = "0.10.0"
+plotly = { git = "https://github.com/jkelleyrtp/plotly.git", branch = "jk/verbump", features = ["kaleido"] }
+serde = "1.0.125"
+# plotly = { git = "https://github.com/jkelleyrtp/plotly.git", branch = "jk/verbump", features = ["kaleido", "plotly_ndarray"] }
+# plotly = { version = "0.6.0", features = ["kaleido", "plotly_ndarray"] }
 
 
 [profile.dev]

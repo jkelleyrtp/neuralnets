@@ -1,6 +1,6 @@
 use anyhow::{anyhow, Context, Error, Result};
 use matfile::{MatFile, NumericData};
-use NeuroNet::*;
+use neuronet::*;
 
 // imports 'rock, paper, scissors' into scope
 use RpsLabel::*;

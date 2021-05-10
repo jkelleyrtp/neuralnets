@@ -7,16 +7,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in library 'NeuroNet'",
+            "name": "Debug unit tests in library 'neuronet'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
                     "--lib",
-                    "--package=NeuroNet"
+                    "--package=neuronet"
                 ],
                 "filter": {
-                    "name": "NeuroNet",
+                    "name": "neuronet",
                     "kind": "lib"
                 }
             },
@@ -31,7 +31,7 @@
                 "args": [
                     "build",
                     "--bin=importmat",
-                    "--package=NeuroNet"
+                    "--package=neuronet"
                 ],
                 "filter": {
                     "name": "importmat",
@@ -50,7 +50,7 @@
                     "test",
                     "--no-run",
                     "--bin=importmat",
-                    "--package=NeuroNet"
+                    "--package=neuronet"
                 ],
                 "filter": {
                     "name": "importmat",
@@ -68,7 +68,7 @@
                 "args": [
                     "build",
                     "--bin=minstnn",
-                    "--package=NeuroNet"
+                    "--package=neuronet"
                 ],
                 "filter": {
                     "name": "minstnn",
@@ -87,7 +87,7 @@
                     "test",
                     "--no-run",
                     "--bin=minstnn",
-                    "--package=NeuroNet"
+                    "--package=neuronet"
                 ],
                 "filter": {
                     "name": "minstnn",
@@ -105,7 +105,7 @@
                 "args": [
                     "build",
                     "--bin=rpsnn",
-                    "--package=NeuroNet"
+                    "--package=neuronet"
                 ],
                 "filter": {
                     "name": "rpsnn",
@@ -124,7 +124,7 @@
                     "test",
                     "--no-run",
                     "--bin=rpsnn",
-                    "--package=NeuroNet"
+                    "--package=neuronet"
                 ],
                 "filter": {
                     "name": "rpsnn",

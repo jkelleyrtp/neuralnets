@@ -1,3 +1,9 @@
 {
-    "rust-analyzer.inlayHints.enable": false
+    "rust-analyzer.inlayHints.enable": true,
+    "python.testing.pytestArgs": [
+        "data"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true
 }
